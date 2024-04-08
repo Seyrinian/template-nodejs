@@ -1,0 +1,16 @@
+{
+    "env": {
+        "commonjs": true,
+        "es2021": true,
+        "node": true,
+        "jest": true
+    },
+    "extends": ["standard", "prettier"],
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "rules": {
+        "no-console": ["warn", { "allow": ["warn"] }], // warning lorsque console.log() dans le code
+        "no-unused-vars": "error" // erreur lorsque variable non utilisée
+    }
+}
