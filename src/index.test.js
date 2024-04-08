@@ -26,7 +26,7 @@ describe('GET /movies', () => {
             callback(new Error('Error'), null);
         });
         const response = await request(app).get('/movies');
-        expect(response.status).toBe(400);
+        expect(response.status).toBe(500);
     });
 
     it('should return 204 if no movies found', async () => {
